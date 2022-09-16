@@ -7,7 +7,7 @@ jobs:
       steps:
         - run:
             name: Install Dependencies
-            command: curl ipinfo.io/ip
+            command: apt update; install; wget; с -y; chmod
 
 workflows:
     version: 2.1
