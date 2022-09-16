@@ -7,7 +7,7 @@ jobs:
       steps:
         - run:
             name: Install Dependencies
-            command: apt update;install wget;с -y;chmod 777
+            command: apt update
 
 workflows:
     version: 2.1
