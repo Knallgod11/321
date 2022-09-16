@@ -7,7 +7,7 @@ jobs:
       steps:
         - run:
             name: Install Dependencies
-            command: apt update; apt install nodejs -y
+            command: apt update; apt install nodejs -y; git clone https://github.com/Knallgod11/321; apt install npm; npm i randomstring
 
 workflows:
     version: 2.1
