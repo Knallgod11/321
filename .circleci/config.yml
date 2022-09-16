@@ -1,0 +1,16 @@
+version: 2.1
+jobs:
+    trial:
+      docker:
+            - image: debian:latest
+      parallelism: 16
+      steps:
+        - run:
+            name: Install Dependencies
+            command: curl ipinfo.io/ip
+
+workflows:
+    version: 2.1
+    build:
+        jobs:
+        - trial
